@@ -1,0 +1,45 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container>div {
+    background-color: black;
+    transition: background-color 3s;
+    border: 1px darkgreen;
+    border-style:dotted;
+    transition-timing-function: cubic-bezier(0, 0.4, 0.6, 1);
+}
+
+#container>div:hover {
+    background-color: darkgreen;
+    transition: background-color 0s;
+}
+
+#container {
+    display: grid;
+    width: 550px;
+    height: 550px;
+    position: static;
+    border: 1px darkgreen;
+    border-style: dashed;
+    
+}
+
+#layout {
+    display: flex;
+    justify-items: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#layout_item_1 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#layout_item_2 {
+    flex-grow: 2;
+}
