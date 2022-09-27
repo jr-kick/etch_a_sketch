@@ -3,17 +3,12 @@ html, body {
     padding: 0px;
 }
 
-#container>div {
-    background-color: black;
-    transition: background-color 3s;
-    border: 1px darkgreen;
-    border-style:dotted;
-    transition-timing-function: cubic-bezier(0, 0.4, 0.6, 1);
+body {
+    background-color: rgb(0, 0, 88);
 }
 
-#container>div:hover {
-    background-color: darkgreen;
-    transition: background-color 0s;
+#container>div {
+    background-color: black;
 }
 
 #container {
@@ -21,9 +16,7 @@ html, body {
     width: 550px;
     height: 550px;
     position: static;
-    border: 1px darkgreen;
-    border-style: dashed;
-    
+    border: 3px solid rgb(73, 110, 124);
 }
 
 #layout {
@@ -36,10 +29,50 @@ html, body {
 #layout_item_1 {
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 #layout_item_2 {
     flex-grow: 2;
+}
+
+#slider {
+    background-color: white;
+    width: 190px;
+    height: 3px;
+    border-radius: 10px;
+    border: 3px solid rgb(32, 31, 41);
+}
+
+#slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #3466c4;
+    cursor: pointer;
+    border-radius: 100%;
+    border: none;
+}
+
+#square_text {
+    cursor: default;
+    font-size: 20px;
+    color: rgb(34, 34, 34);
+}
+
+#square_text::selection {
+    background-color: none;
+}
+
+#item_background {
+    background-color: rgb(80, 80, 80);
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 5px solid rgb(32, 31, 41);
 }
