@@ -41,6 +41,7 @@ function rainbowColorMode() {
 };
 
 function setColor(e) {
+    colorMode = 'color_picker';
     resize();
     currentColor = e;
 };
@@ -82,7 +83,7 @@ function resize(e) {
     } else {
         clearContainer();
         setUpContainer(e);
-    }
+    };
 };
 
 function clearContainer() {
